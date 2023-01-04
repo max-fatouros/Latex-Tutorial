@@ -1,0 +1,129 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{lipsum}
+\usepackage{booktabs}
+
+
+
+
+\title{Latex Tutorial}
+\author{Max Fatouros}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+
+\section{Text}\label{sec:text}
+    Write some text.
+
+    % Paragraphs are seperated by a newline. To have it formatted like it is in this document you must put \usepackage{parskip} near the top of the document.
+    Write this in a new paragraph.
+
+    
+    \begin{itemize}
+        \item first item
+        \item second item
+        \item third
+    \end{itemize}
+
+    \begin{enumerate}
+        \item a
+        \item b
+        \item c
+    \end{enumerate}
+
+
+\section{Math}\label{sec:math}
+    Math can be put inline as part of the sentence like this $E = mc^2$. Or it can be put on its own line in "display mode":
+    \[
+        E = \gamma m_0c^2 = \sqrt{m_0^2c^4 + p^2c^2}
+    \]
+    You can also label equations
+    \begin{equation}\label{eq:energy-momentum}
+        E^2 = m^2c^4 + p^2c^2
+    \end{equation}
+    Can do multiline equations:
+    \begin{align*}
+        \sum^N_{i=1} i &= 1 + 2 + 3 + 4 + \cdots + N\\
+                       &= \frac{N(N+1)}{2}
+    \end{align*}
+
+\section{Figures and Tables}
+    \lipsum[1]
+    
+    I want to place an image below this text
+    % h --- here
+    % t --- top
+    % b --- bottom
+    % ! --- more aggressive placement
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=\textwidth]{kitten.png}
+        \caption{Make sure to wrap the image and the caption in a figure environment.}
+        \label{fig:kitten}
+    \end{figure}
+
+    And above this.
+
+    Similarly, we can add tables
+    \begin{table}[h]
+        \centering
+        % l,c,r defined text alignment
+        \begin{tabular}{|c|c|}
+            \hline
+            \textbf{A} & \textbf{B}\\
+            \hline
+            1 & 2 \\
+            \hline
+            3 & 4 \\
+            \hline
+        \end{tabular}
+        
+        \caption{table}
+        \label{tab:my_label}
+    \end{table}
+
+    \lipsum[1]
+    % \usepackage{booktabs}
+    % Generated with some online tool
+    \begin{table}[h]
+        \centering
+        
+        \begin{tabular}{lllll}
+            \toprule
+            A  & B  & C  & D  & E  \\
+            \midrule
+            1  & 2  & 3  & 4  & 5  \\
+            6  & 7  & 8  & 9  & 10 \\
+            11 & 12 & 13 & 14 & 16 \\
+            \bottomrule
+        \end{tabular}
+        
+        \caption{Better table}
+        \label{tab:better_table}
+        
+    \end{table}
+
+
+
+\section{References}
+    Everything we've given a label to can now be referenced. For example I can reference Section \ref{sec:text}, any numbered and labeled equations (Eq. \ref{eq:energy-momentum}), and figures or tables (Fig. \ref{fig:kitten}).
+    
+    
+
+
+
+
+
+
+\end{document}
