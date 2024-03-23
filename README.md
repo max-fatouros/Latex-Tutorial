@@ -36,7 +36,7 @@ In the handout, the students are given a chance to try these basic commands and 
 
 <img src="overleaf.png" alt="image" width="300" height="auto">
 
-3. In the now opened overleaf project, you should have a file explorer on the left-hand side with the files and folders shown below. To compile a tex file, click on one of the `main.tex` files and hit compile or <ctrl+enter>.
+3. In the now opened overleaf project, you should have a file explorer on the left-hand side with the files and folders shown below. To compile a tex file, click on one of the `main.tex` files and hit recompile or press <ctrl+enter>.
 
 ```bash
 ├── README.md
@@ -50,5 +50,5 @@ In the handout, the students are given a chance to try these basic commands and 
 └── overleaf.png
 ```
 
-4. Compile the `main.tex` in the `lecture-notes` directory. Read the compiled pdf and then the source-code of that `main.tex`.
+4. Compile the `main.tex` in the `lecture-notes` directory. Read the compiled pdf and the source-code of that `main.tex`.
 5. Compile the `main.tex` in the `handout` directory. Read the compiled pdf and fill-out the source-code of that `main.tex` as you go.
