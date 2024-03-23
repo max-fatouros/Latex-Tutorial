@@ -2,6 +2,13 @@
 
 A brief $\LaTeX$ tutorial made for the University of Manitoba Space Applications and Technology Society ([UMSATS](http://www.umsats.ca/)).
 
+<!-- toc -->
+
+- [Description](#description)
+- [Getting Started](#getting-started)
+
+<!-- tocstop -->
+
 ## Description
 The tutorial consists of a 30 minute lecture and a fill-in-the-blank handout for students to complete.
 
@@ -29,7 +36,7 @@ In the handout, the students are given a chance to try these basic commands and 
 
 <img src="overleaf.png" alt="image" width="300" height="auto">
 
-3. In the now opened overleaf project, you should have a file explorer on the left-hand side with files and folders shown below. To compile a tex file, click on one of the `main.tex` files and hit compile or <ctrl+enter>.
+3. In the now opened overleaf project, you should have a file explorer on the left-hand side with the files and folders shown below. To compile a tex file, click on one of the `main.tex` files and hit compile or <ctrl+enter>.
 
 ```bash
 ├── README.md
