@@ -7,6 +7,7 @@
 % These are pieces of code that let you do different things such as having clickable links in the PDF or defining more formatting options.
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
+\usepackage{dirtytalk}
 
 \title{Latex Handout}
 \author{}
@@ -68,10 +69,10 @@
     \verb"\begin{table}", then press enter to autocomplete the table template. 
     \begin{enumerate}
         \item First just fill out the given 2x2 table and compile it to ensure things are working.
-        \item Add the "h" as we did for the picture to place the table directly below this list.
-        \item Replace "c"s with the letter "l" to left-align text
+        \item Add the \say{h} as we did for the picture to place the table directly below this list.
+        \item Replace \say{c}s with the letter \say{l} to left-align text
         \item Remove vertical lines by removing the bars \verb"|".
-        \item Add one more letter "l" to make the table 3 wide
+        \item Add one more letter \say{l} to make the table 3 wide
         \item Add \verb"\usepackage{booktabs}" to the preamble.
         \item Use the \verb"\toprule", \verb"\midrule", and \verb"\bottomrule" horizontal lines from the booktabs package to format your table.
         \item Add a caption.
